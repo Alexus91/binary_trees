@@ -35,15 +35,15 @@ size_t binary_tree_height(const binary_tree_t *tree)
  * @tree: pointer to the root node
  * Return: balance
  */
-int binary_tree_balance(const binary_tree_t *tree) 
+int binary_tree_balance(const binary_tree_t *tree)
 {
 	int l, r;
-	
-	if (tree == NULL) 
+
+	if (tree == NULL)
 		return (0);
 
 	l = binary_tree_height(tree->left);
 	r = binary_tree_height(tree->right);
-	
+
 	return (l - r);
 }
